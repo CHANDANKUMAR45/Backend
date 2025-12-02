@@ -1,0 +1,10 @@
+{
+  "name":"day28",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "dependencies": {
+    "@google/genai": "^1.30.0",
+    "express": "^5.2.1"
+  }
+}

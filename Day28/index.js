@@ -1,15 +1,16 @@
-import { GoogleGenAI } from "@google/genai";
+const express =require('express');
+const app=express();
 
-const ai = new GoogleGenAI({apiKey:"AIzaSyAJA8E3Oeh-kn4B-EomrapuXhASPg6itew"});
+app.use(express.json());
 
-async function main() {
-  const response = await ai.models.generateContent({
-    model: "gemini-2.5-flash",
-    contents: "How are you",
-  });
-  console.log(response.text);
-}
+app.post('/chat')
 
-await main();
 
-// 
+
+
+
+app.listen(3000,()=>{
+  console.log("Listening at port 3000");
+  
+})
+
